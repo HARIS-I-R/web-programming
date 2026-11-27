@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | MKS Used Cars</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">MKS <span>USED CARS</span></a>
+    <ul id="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stock.html">Stock</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" title="Toggle theme">☀ / ☾</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation">☰</button>
+    </div>
+</nav>
+<main>
+
+<section class="section contact">
+    <div class="heading">
+        <div>
+            <div class="eyebrow">Let's connect</div>
+            <h2>Enquire or Contact Us</h2>
+            <p class="muted">Tell us which vehicle interests you and we will get back to you.</p>
+        </div>
+    </div>
+
+    <div class="contact-layout">
+        <div>
+            <div class="alert success" id="enquirySuccess" hidden>
+                Thank you. Your email app should open with your enquiry. Send it to finish.
+            </div>
+            <div class="alert error" id="formErrors" hidden><ul id="errorList"></ul></div>
+
+            <form id="enquiryForm" class="enquiry-form" novalidate>
+                <label for="enqName">Name</label>
+                <input id="enqName" type="text">
+
+                <label for="enqPhone">Mobile number</label>
+                <input id="enqPhone" type="tel" placeholder="e.g. 9876543210">
+
+                <label for="enqEmail">Email</label>
+                <input id="enqEmail" type="email">
+
+                <label for="enqVehicle">Vehicle</label>
+                <select id="enqVehicle">
+                    <option value="">Choose a vehicle</option>
+            <option value="BMW M340i">BMW M340i</option>
+            <option value="Range Rover Sport">Range Rover Sport</option>
+            <option value="Toyota Fortuner">Toyota Fortuner</option>
+            <option value="Honda Civic">Honda Civic</option>
+            <option value="Hyundai Creta">Hyundai Creta</option>
+            <option value="Kia Seltos">Kia Seltos</option>
+            <option value="Mahindra Thar">Mahindra Thar</option>
+            <option value="Maruti Suzuki Swift">Maruti Suzuki Swift</option>
+            <option value="Tata Nexon">Tata Nexon</option>
+            <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+            <option value="Audi A4">Audi A4</option>
+            <option value="Skoda Octavia">Skoda Octavia</option>
+            <option value="Jeep Compass">Jeep Compass</option>
+                </select>
+
+                <label for="enqMessage">Message (optional)</label>
+                <textarea id="enqMessage" rows="4"></textarea>
+
+                <button class="btn" type="submit">Send enquiry</button>
+            </form>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-box"><h3>📍 Location</h3><p>Perundurai, Erode, Tamil Nadu</p></div>
+            <div class="contact-box"><h3>📞 Phone</h3><p>+91 98765 43210</p></div>
+            <div class="contact-box"><h3>✉ Email</h3><p>mksusedcars@gmail.com</p></div>
+            <div class="contact-box"><h3>🕘 Opening Hours</h3><p>Monday – Saturday: 9:00 AM – 8:00 PM</p></div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>© <span id="year"></span> MKS USED CARS · All Rights Reserved</footer>
+</body>
+</html>

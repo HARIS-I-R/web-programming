@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock | MKS Used Cars</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">MKS <span>USED CARS</span></a>
+    <ul id="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stock.html" class="active">Stock</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" title="Toggle theme">☀ / ☾</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation">☰</button>
+    </div>
+</nav>
+<main>
+
+<section class="section stock">
+    <div class="heading">
+        <div>
+            <div class="eyebrow">Quick overview</div>
+            <h2>Stock Availability</h2>
+            <p class="muted">Check current availability by enquiring about a vehicle.</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr><th>#</th><th>Vehicle</th><th>Brand</th><th>Availability</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>01</td><td>BMW M340i</td><td>BMW</td><td><a class="small-btn" href="contact.html?vehicle=BMW%20M340i">Enquire</a></td></tr>
+            <tr><td>02</td><td>Range Rover Sport</td><td>Range Rover</td><td><a class="small-btn" href="contact.html?vehicle=Range%20Rover%20Sport">Enquire</a></td></tr>
+            <tr><td>03</td><td>Toyota Fortuner</td><td>Toyota</td><td><a class="small-btn" href="contact.html?vehicle=Toyota%20Fortuner">Enquire</a></td></tr>
+            <tr><td>04</td><td>Honda Civic</td><td>Honda</td><td><a class="small-btn" href="contact.html?vehicle=Honda%20Civic">Enquire</a></td></tr>
+            <tr><td>05</td><td>Hyundai Creta</td><td>Hyundai</td><td><a class="small-btn" href="contact.html?vehicle=Hyundai%20Creta">Enquire</a></td></tr>
+            <tr><td>06</td><td>Kia Seltos</td><td>Kia</td><td><a class="small-btn" href="contact.html?vehicle=Kia%20Seltos">Enquire</a></td></tr>
+            <tr><td>07</td><td>Mahindra Thar</td><td>Mahindra</td><td><a class="small-btn" href="contact.html?vehicle=Mahindra%20Thar">Enquire</a></td></tr>
+            <tr><td>08</td><td>Maruti Suzuki Swift</td><td>Maruti Suzuki</td><td><a class="small-btn" href="contact.html?vehicle=Maruti%20Suzuki%20Swift">Enquire</a></td></tr>
+            <tr><td>09</td><td>Tata Nexon</td><td>Tata</td><td><a class="small-btn" href="contact.html?vehicle=Tata%20Nexon">Enquire</a></td></tr>
+            <tr><td>10</td><td>Mercedes-Benz C-Class</td><td>Mercedes-Benz</td><td><a class="small-btn" href="contact.html?vehicle=Mercedes-Benz%20C-Class">Enquire</a></td></tr>
+            <tr><td>11</td><td>Audi A4</td><td>Audi</td><td><a class="small-btn" href="contact.html?vehicle=Audi%20A4">Enquire</a></td></tr>
+            <tr><td>12</td><td>Skoda Octavia</td><td>Skoda</td><td><a class="small-btn" href="contact.html?vehicle=Skoda%20Octavia">Enquire</a></td></tr>
+            <tr><td>13</td><td>Jeep Compass</td><td>Jeep</td><td><a class="small-btn" href="contact.html?vehicle=Jeep%20Compass">Enquire</a></td></tr>
+        </tbody>
+    </table>
+
+    <div class="stats">
+        <div class="stat"><strong>13</strong><span class="muted">Models listed</span></div>
+        <div class="stat"><strong>13</strong><span class="muted">Models in catalogue</span></div>
+        <div class="stat"><strong>6 days</strong><span class="muted">Open each week</span></div>
+    </div>
+</section>
+</main>
+<footer>© <span id="year"></span> MKS USED CARS · All Rights Reserved</footer>
+</body>
+</html>

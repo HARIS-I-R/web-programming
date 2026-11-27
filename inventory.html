@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory | MKS Used Cars</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">MKS <span>USED CARS</span></a>
+    <ul id="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html" class="active">Inventory</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stock.html">Stock</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" title="Toggle theme">☀ / ☾</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation">☰</button>
+    </div>
+</nav>
+<main>
+
+<section class="section">
+    <div class="heading">
+        <div>
+            <div class="eyebrow">Our collection</div>
+            <h2>Inventory</h2>
+            <p class="muted">Search by name or filter by brand.</p>
+        </div>
+    </div>
+
+    <div class="car-tools">
+        <input id="searchCars" type="search" placeholder="Search a car...">
+        <select id="carFilter">
+            <option value="all">All vehicles</option>
+            <option value="bmw">BMW</option>
+            <option value="range">Range Rover</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="kia">Kia</option>
+            <option value="mahindra">Mahindra</option>
+            <option value="maruti">Maruti Suzuki</option>
+            <option value="tata">Tata</option>
+            <option value="mercedes">Mercedes-Benz</option>
+            <option value="audi">Audi</option>
+            <option value="skoda">Skoda</option>
+            <option value="jeep">Jeep</option>
+        </select>
+    </div>
+
+    <div class="cars" id="carList">
+    <article class="card" data-brand="bmw" data-name="bmw m340i">
+        <img src="images/bmw-m340i.jpg" alt="BMW M340i" loading="lazy">
+        <div class="card-body">
+            <h3>BMW M340i</h3>
+            <p class="muted">Performance meets comfort.</p>
+            <div class="tags"><span class="tag">Automatic</span><span class="tag">Petrol</span><span class="tag">Premium</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=BMW%20M340i">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="range" data-name="range rover sport">
+        <img src="images/range-rover-sport.jpg" alt="Range Rover Sport" loading="lazy">
+        <div class="card-body">
+            <h3>Range Rover Sport</h3>
+            <p class="muted">Luxury and capability.</p>
+            <div class="tags"><span class="tag">Luxury SUV</span><span class="tag">Diesel</span><span class="tag">Premium</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Range%20Rover%20Sport">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="toyota" data-name="toyota fortuner">
+        <img src="images/toyota-fortuner.jpg" alt="Toyota Fortuner" loading="lazy">
+        <div class="card-body">
+            <h3>Toyota Fortuner</h3>
+            <p class="muted">Ready for every adventure.</p>
+            <div class="tags"><span class="tag">4x4</span><span class="tag">Diesel</span><span class="tag">SUV</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Toyota%20Fortuner">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="honda" data-name="honda civic">
+        <img src="images/honda-civic.jpg" alt="Honda Civic" loading="lazy">
+        <div class="card-body">
+            <h3>Honda Civic</h3>
+            <p class="muted">Refined everyday driving.</p>
+            <div class="tags"><span class="tag">Sedan</span><span class="tag">Petrol</span><span class="tag">Automatic</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Honda%20Civic">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="hyundai" data-name="hyundai creta">
+        <img src="images/hyundai-creta.jpg" alt="Hyundai Creta" loading="lazy">
+        <div class="card-body">
+            <h3>Hyundai Creta</h3>
+            <p class="muted">Comfort for city and highway.</p>
+            <div class="tags"><span class="tag">SUV</span><span class="tag">Petrol</span><span class="tag">Family</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Hyundai%20Creta">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="kia" data-name="kia seltos">
+        <img src="images/kia-seltos.jpg" alt="Kia Seltos" loading="lazy">
+        <div class="card-body">
+            <h3>Kia Seltos</h3>
+            <p class="muted">A stylish compact SUV.</p>
+            <div class="tags"><span class="tag">SUV</span><span class="tag">Petrol</span><span class="tag">Automatic</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Kia%20Seltos">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="mahindra" data-name="mahindra thar">
+        <img src="images/mahindra-thar.jpg" alt="Mahindra Thar" loading="lazy">
+        <div class="card-body">
+            <h3>Mahindra Thar</h3>
+            <p class="muted">Adventure-inspired SUV.</p>
+            <div class="tags"><span class="tag">SUV</span><span class="tag">4x4</span><span class="tag">Diesel</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Mahindra%20Thar">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="maruti" data-name="maruti suzuki swift">
+        <img src="images/maruti-swift.jpg" alt="Maruti Suzuki Swift" loading="lazy">
+        <div class="card-body">
+            <h3>Maruti Suzuki Swift</h3>
+            <p class="muted">Compact and practical.</p>
+            <div class="tags"><span class="tag">Hatchback</span><span class="tag">Petrol</span><span class="tag">City</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Maruti%20Suzuki%20Swift">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="tata" data-name="tata nexon">
+        <img src="images/tata-nexon.jpg" alt="Tata Nexon" loading="lazy">
+        <div class="card-body">
+            <h3>Tata Nexon</h3>
+            <p class="muted">Compact SUV versatility.</p>
+            <div class="tags"><span class="tag">SUV</span><span class="tag">Petrol</span><span class="tag">Compact</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Tata%20Nexon">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="mercedes" data-name="mercedes-benz c-class">
+        <img src="images/mercedes-cclass.jpg" alt="Mercedes-Benz C-Class" loading="lazy">
+        <div class="card-body">
+            <h3>Mercedes-Benz C-Class</h3>
+            <p class="muted">Elegant comfort and design.</p>
+            <div class="tags"><span class="tag">Sedan</span><span class="tag">Luxury</span><span class="tag">Automatic</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Mercedes-Benz%20C-Class">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="audi" data-name="audi a4">
+        <img src="images/audi-a4.jpg" alt="Audi A4" loading="lazy">
+        <div class="card-body">
+            <h3>Audi A4</h3>
+            <p class="muted">Premium sedan sophistication.</p>
+            <div class="tags"><span class="tag">Sedan</span><span class="tag">Petrol</span><span class="tag">Premium</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Audi%20A4">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="skoda" data-name="skoda octavia">
+        <img src="images/skoda-octavia.jpg" alt="Skoda Octavia" loading="lazy">
+        <div class="card-body">
+            <h3>Skoda Octavia</h3>
+            <p class="muted">Space with a refined drive.</p>
+            <div class="tags"><span class="tag">Sedan</span><span class="tag">Petrol</span><span class="tag">Comfort</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Skoda%20Octavia">Enquire</a></div>
+        </div>
+    </article>
+    <article class="card" data-brand="jeep" data-name="jeep compass">
+        <img src="images/jeep-compass.jpg" alt="Jeep Compass" loading="lazy">
+        <div class="card-body">
+            <h3>Jeep Compass</h3>
+            <p class="muted">SUV character for every journey.</p>
+            <div class="tags"><span class="tag">SUV</span><span class="tag">Diesel</span><span class="tag">Premium</span></div>
+            <div class="card-foot"><strong>Contact for price</strong><a class="small-btn" href="contact.html?vehicle=Jeep%20Compass">Enquire</a></div>
+        </div>
+    </article>
+    </div>
+    <p class="empty" id="emptyState">No cars match your search.</p>
+</section>
+</main>
+<footer>© <span id="year"></span> MKS USED CARS · All Rights Reserved</footer>
+</body>
+</html>
